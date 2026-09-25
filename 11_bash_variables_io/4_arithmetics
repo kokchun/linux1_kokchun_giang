@@ -9,3 +9,9 @@ echo "5%3 = $((5%3))"
 echo "5/3 = $((5/3))"
 
 echo "scale=2;  5/3" | bc 
+
+PI=3.141592
+radius=2
+area=$(echo "scale=2; $PI*$radius^2" | bc)
+
+echo "circle area: $area"
