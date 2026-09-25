@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "Hello using bash"
+
+name='Kokchun'
+
+echo "Hello $name"
