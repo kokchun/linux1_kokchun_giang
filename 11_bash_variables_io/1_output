@@ -5,3 +5,4 @@ echo "Hello using bash"
 name='Kokchun'
 
 echo "Hello $name"
+echo 'Hi $name'
