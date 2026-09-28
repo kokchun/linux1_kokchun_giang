@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+
+# range-based for loop 
+for i in {1..6}; do
+    echo "cool_$i"
+done
