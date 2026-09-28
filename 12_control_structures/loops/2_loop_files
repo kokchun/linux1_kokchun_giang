@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# -p makes it idempotent
+mkdir -p assets
+touch assets/cool{1..5}.md
+touch assets/cool{1..5}.txt
+
+
+echo "Files in directory"
+for file in assets/*.txt; do
+    echo "$file is a txt file"
+done
