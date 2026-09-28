@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-filename="cool.png"
+filename=$1
 
 if [[ "$filename" == *.txt ]]; then
     echo "text file"
