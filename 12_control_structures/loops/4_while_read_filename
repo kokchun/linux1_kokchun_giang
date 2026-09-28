@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
-i=0
-while [[ $i -le 10 ]]; do
-    echo "number $i"
-    ((i+=1))
-done
+# IFS - internal field separator
+# default: separates space, tab, newline
+
+while IFS= read -r filename; do
+    if [[ -f "$filename" ]]; then
+        echo "$filename is a file"
+    else
+        echo "$filename not found"
+    fi
+done < assets/filelist.txt
