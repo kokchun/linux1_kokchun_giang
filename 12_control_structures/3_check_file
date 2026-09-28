@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+file_path=$1
+
+if [[ -f "$file_path" ]]; then
+    echo "file '$file_path' exists"
+else
+    echo "file '$file_path' not exist"
+    exit 1
+fi
