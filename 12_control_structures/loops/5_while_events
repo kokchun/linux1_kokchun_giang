@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo "$PWD"
+
+inotifywait -m -e close_write -e moved_to --format "%f" "$PWD" |
+while read -r filename; do
+    echo "$filename"
+done
