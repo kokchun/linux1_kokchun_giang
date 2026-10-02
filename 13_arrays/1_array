@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+fruits=(apple pear banana kiwi)
+echo "$fruits"
+echo "${fruits[0]}"
+echo "${fruits[2]}"
+
+# indexes from the end
+echo "${fruits[-1]}"
+
+# gets all elements
+echo "${fruits[@]}"
+
+# slicing
+echo "${fruits[@]:1:2}"
+
