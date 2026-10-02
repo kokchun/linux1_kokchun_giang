@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# secret.pdf -> pdf is suffix (file extension)
+
+file=secret.projectX.pdf
+
+echo "$file"
+
+# starts from beginning go to 1st . and removes everything before. # -> non-greedy
+echo "${file#*.}"
+# greedy (2 hashes ##)
+echo "${file##*.}"
+
+# start from end
+echo "${file%.*}"
+echo "${file%%.*}"
+
+# environment variable
+echo "$PWD"
+
+repo_path="${PWD%/*}"
+echo "$repo_path"
+
+repo_name="${repo_path##*/}"
+echo "$repo_name"
+
+
+
+
+
+
+
+
+
+
+

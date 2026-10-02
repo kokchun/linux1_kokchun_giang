@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+fruit='sweet mango'
+echo '$fruit'
+
+# double quote does variable expansion
+echo "$fruit"
+
+# slicing
+echo "${fruit:2:2}"
+
+echo "${#fruit}"
+
+echo "${fruit: -5}"
