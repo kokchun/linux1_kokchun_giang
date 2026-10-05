@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+source utils
+
+if file_exists "utils"; then
+    echo "utils exists"
+fi 
+
+
+
+
+
+
+
